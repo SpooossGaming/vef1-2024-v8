@@ -5,8 +5,10 @@
   "scripts": {
     "dev": "browser-sync start --server --files scripts.js index.html",
     "copy:html": "cpy ./*.html ./build/",
+    "copy:css": "cpy ./*.css ./build/",
     "copy:js": "cpy ./*.js ./build/",
-    "build": "concurrently npm:copy:*"
+    "build": "concurrently npm:copy:*",
+    "lint": "eslint *.js ./**/*.js"
   },
   "keywords": [],
   "author": "",
