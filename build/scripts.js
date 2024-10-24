@@ -41,13 +41,13 @@ function transformstring() {
         const vowelCount = vowels(text);
         const consonantCount = consonants(text);
         
-        wideElement[0].textContent = text;
+        inputreverseElement[0].textContent = text;
         longestElement.textContent = longestWord;
         shortestElement.textContent = shortestWord;
         vowelsElement.textContent = vowelCount;
         consonantsElement.textContent = consonantCount;
         palindromeElement.textContent = isPalindrome ? '' : 'ekki';
-        wideElement[1].textContent = reversedText;
+        inputreverseElement[1].textContent = reversedText;
       }
 }
 
